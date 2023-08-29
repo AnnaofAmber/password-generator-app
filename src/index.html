@@ -7,23 +7,45 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Password generator app</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  <section class="section-generator">
+    <div class="container">
+<h1 class="app-name">Password Generator</h1>
+<div class="password">
+<p class="text-password">P4$5W0rD!</p>
+<span class="copied"></span>
+<button class="btn-copy" type="button"></button>
+</div>
+<form class="generator-form">
+  <p class="text-length">Character Length</p>
+  <span class="number-length">1</span>
+<label class="hidden" for="character-length">Character Length</label>
+<input 
+class="input-length"
+type="range" 
+name="character-length"
+id="character-length"
+value="4"
+min="4"
+max="20"
+step="1"/>
+<label for="uppercase">Include Uppercase Letters</label>
+<input id="uppercase" type="checkbox" name="options" value="uppercase"  />
+<label for="lowercase">Include Lowercase Letters</label>
+<input id="lowercase" type="checkbox" name="options" value="lowercase"  />
+<label for="numbers">Include Numbers</label>
+<input id="numbers" type="checkbox" name="options" value="numbers"  />
+<label for="symbols">Include Symbols</label>
+<input id="symbols" type="checkbox" name="options" value="symbols"  />
+<p>STRENGTH</p>
+<button class="btn-generate" type="submit">GENERATE</button>
 
-  Password Generator
 
-  P4$5W0rD!
-
-  Character Length
-
-  Include Uppercase Letters
-  Include Lowercase Letters
-  Include Numbers
-  Include Symbols
-
-  Strength
-
-  Generate
-
+</form>
+</div>
+</section>
+<script src="./js/index.js" type="module"></script>
 </body>
 </html>

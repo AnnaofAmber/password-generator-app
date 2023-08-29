@@ -1,0 +1,83 @@
+:root{
+    /* colors */
+    --dark-grey: #24232C;
+    --grey: #817D92;
+    --almost-white: #E6E5EA;
+    --very-dark-grey: #18171F;
+    --neon-green: #A4FFAF;
+    --red: #F64A4A;
+    --orange: #FB7C58;
+    --yellow: #F8CD65;
+}
+
+body{
+    font-family: 'JetBrains Mono', sans-serif ;
+    color: var(--almost-white);
+    background: linear-gradient(180deg, #14131B 0%, #08070B 100%);
+    margin: 0;
+}
+
+.hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;}
+
+.container {
+    min-width: 320px;
+    max-width: 343px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-generator {
+    padding-top: 64px;
+    padding-bottom: 63px;
+}
+
+.app-name {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: var(--grey);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.password {
+    background-color: var(--dark-grey);
+    padding: 17px 16px 15px 16px;
+    display: flex;
+
+    margin-bottom: 16px;
+}
+
+.text-password{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.copied {
+}
+.btn-copy {
+    height: 20px;
+}
+.generator-form {
+    background-color: var(--dark-grey);
+}
+.text-length {
+}
+.number-length {
+}
+.hidden {
+}
+.input-length {
+}
+.btn-generate {
+}

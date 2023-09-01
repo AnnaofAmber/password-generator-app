@@ -69,12 +69,16 @@ body{
 }
 
 .text-password{
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 100px;
     font-size: 24px;
     font-weight: 700;
+    
 }
 
 .copied {
+color: var(--neon-green);
 }
 .btn-copy {
     height: 20px;
@@ -193,6 +197,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 32px;
    
   }
 
@@ -208,7 +213,70 @@ body{
 
 
 
+.password-strength {
+  display: flex;
+  width: 279px;
+  background-color: var(--very-dark-grey);
+  gap: 57px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+.text-strength {
+  margin: 0px;
+  color: var(--grey);
+}
+.actual-strength {
+  display: flex;
+  gap: 16px;
+}
+
+.strength-value{
+font-size: 18px;
+}
+
+
+.strength-level {
+  display: flex;
+  gap: 8px;
+}
+
+.strength{
+  width: 6px;
+  height: 24px;
+  border: 2px solid var(--Almost-White, #E6E5EA);
+}
+.too-weak {
+}
+.weak {
+}
+.medium {
+}
+.strong {
+}
+
+
 .btn-generate {
+
+display: block;
+width: 100%;
+height: 56px;
+background-color: var(--neon-green);
+color: var(--dark-grey);
+cursor: pointer;
+font-weight: 700;
+letter-spacing: 0.050em;
+border: none;
+
+}
+.btn-generate:hover{
+  background-color: transparent;
+  border:  2px solid var(--Neon-Green, #A4FFAF);
+  color: var(--neon-green);  
+}
+.btn-generate:focus{
+  background-color: transparent;
+  border:  2px solid var(--Neon-Green, #A4FFAF);
+  color: var(--neon-green);  
 }
 
 

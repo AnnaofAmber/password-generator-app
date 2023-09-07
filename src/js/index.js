@@ -46,35 +46,16 @@ function handleInputChange(e) {
  */
 
 const body = document.querySelector('.body');
-const header = document.querySelector('.app-name');
-const sections = {
-
-  password: document.querySelector('.password'),
-  form: document.querySelector('.generator-form')
-
-}
-const values = Object.values(sections)
-
 const switcher = document.getElementById('toggle')
 
 
 function onDark() {
   body.className = "";
-  header.classList.remove("title-ligth")
-  for (const value of values){
-    value.classList.remove("section-ligth")
-  }
 }
 
 function onLigth(e){
   if(e.currentTarget.checked){
     body.classList.add("body-ligth");
-    header.classList.add("title-ligth")
-
-    for (const value of values){
-      value.classList.add("section-ligth")
-    }
-
   }
   else{
     onDark()

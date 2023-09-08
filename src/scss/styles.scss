@@ -248,19 +248,43 @@ body {
     gap: 8px;
 }
 
+.strength-level-too-week{
+    .strength:first-child{
+        border: 2px solid var(--red);
+        background-color: var(--red);
+
+    }
+}
+.strength-level-week {
+    .strength:first-child{
+    border: 2px solid var(--orange);
+    background-color: var(--orange);
+    }
+    .strength:nth-child(2){
+    border: 2px solid var(--orange);
+    background-color: var(--orange);
+    }
+}
+.strength-level-medium {
+    .strength:not(:last-child){
+        border: 2px solid var(--yellow);
+            background-color: var(--yellow);
+    }
+}
+.strength-level-strong{
+    .strength{
+   border: 2px solid var(--neon-green);
+   background-color: var(--neon-green);
+    }
+}
+
 .strength {
     width: 6px;
     height: 24px;
     border: 2px solid var(--almost-white);
 }
 
-.too-weak {}
 
-.weak {}
-
-.medium {}
-
-.strong {}
 
 
 .btn-generate {

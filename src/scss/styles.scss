@@ -221,9 +221,11 @@ body {
 
 .password-strength {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 279px;
     background-color: var(--very-dark-grey);
-    gap: 57px;
+
     padding: 14px 16px;
     margin-bottom: 16px;
 }
@@ -240,6 +242,7 @@ body {
 
 .strength-value {
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 
@@ -441,6 +444,17 @@ background-repeat: no-repeat;
     background-color: maroon;
     color: var(--almost-white);
   }
+
+  .btn-generate:hover{
+    background-color: transparent;
+    color: maroon;
+    border: 2px solid maroon;
+  }
+   .btn-generate:focus {
+       background-color: transparent;
+       color: maroon;
+       border: 2px solid maroon;
+   }
 
 }
 

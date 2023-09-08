@@ -407,6 +407,18 @@ body {
     color: maroon;
   }
 
+  .input-check{
+    border: 2px solid var(--dark-grey);
+     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 10.6066L7.39341 14L15.3934 6' stroke='%23E6E5EA' stroke-width='3'/%3E%3C/svg%3E");
+
+  }
+
+.input-check:checked {
+    background-color: maroon;
+    border-color: maroon;
+    background-size: 20px;
+}
+
   .password-strength{
     background-color: var(--grey);
     

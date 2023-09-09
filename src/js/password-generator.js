@@ -1,6 +1,7 @@
 const password = document.querySelector('.text-password');
 const btnGenerate = document.querySelector('.btn-generate');
 const passwordLength = document.querySelector('.number-length');
+const copied = document.querySelector('.text-copied')
 
 const checkboxes = {
   uppercase: document.getElementById('uppercase'),
@@ -75,7 +76,8 @@ let charsSymbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')'];
 let chars = [];
 
 function onGenerate(e) {
-  let generatedPassword = '';
+    let generatedPassword = '';
+    copied.textContent = ''
   const selectedLength = Number(passwordLength.textContent);
   e.preventDefault();
 

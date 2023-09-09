@@ -72,22 +72,32 @@ body {
 }
 
 .text-password {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
+    height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 18px;
     font-weight: 700;
+    background-color: transparent;
+    border: none;
+    color: var(--almost-white);
+    resize: none;
+    overflow: hidden;
 
+}
+.text-password:focus{
+    outline: none;
 }
 
 .copied{
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
 }
 
 .text-copied {
     color: var(--neon-green);
     text-transform: uppercase;
+    font-size: 10px;
 }
 
 .btn-copy {
@@ -418,6 +428,10 @@ border: none;
 
   .password{
     background-color: var(--almost-white);
+  }
+
+  .text-password{
+    color: var(--dark-grey);
   }
   .text-copied{
     color: maroon;

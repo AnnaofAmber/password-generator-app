@@ -9,7 +9,6 @@ const checkboxes = {
   symbols: document.getElementById('symbols'),
 };
 
-const selected = Object.values(checkboxes);
 
 let charsUppercase = [
   'A',
@@ -121,18 +120,18 @@ function onGenerate(e) {
         }
     }
 
-
-    console.log(chars);
-    const mapped = chars.flatMap(el => {
+    const selectedChars = chars.flatMap(el => {
 return el
     })
-    
 
-  for (let i = 0; i < selectedLength; i++) {
-    let randomNumber = Math.floor(Math.random() * mapped.length);
+    for (let i = 0; i < selectedLength; i++) {
+            const selected = []
+    selectedChars.forEach(el=> selected.push(el))
+        console.log(selected);
 
-    generatedPassword += mapped.splice(randomNumber, 1);
 
+    let randomNumber = Math.floor(Math.random() * selected.length);
+    generatedPassword += selected.splice(randomNumber, 1);
     password.textContent = generatedPassword;
   }
 

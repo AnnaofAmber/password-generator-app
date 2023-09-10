@@ -38,19 +38,39 @@ body {
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
+    
+    @media only screen and (min-width: 768px) {
+        max-width: 768px;
+        padding-left: 114px;
+        padding-right: 114px;
+    }
+        @media only screen and (min-width: 1440px) {
+            max-width: 1440px;
+                padding-left: 450px;
+                padding-right: 450px;
+        }
 }
 
 .section-generator {
     padding-top: 64px;
     padding-bottom: 63px;
+
+    @media only screen and (min-width: 768px) {
+    padding-top: 133px;
+    padding-bottom: 196px;
+        }
 }
 
 .title {
     margin-bottom: 16px;
     color: var(--grey);
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    padding-left: 90px;
+
+    @media only screen and (min-width: 768px) {
+   margin-bottom: 31px;
+    }
 
 }
 
@@ -60,7 +80,10 @@ body {
     margin-right: 40px;
     font-size: 16px;
     font-weight: 700;
-
+@media only screen and (min-width: 768px) {
+        font-size: 24px;;
+        margin-right: 80px;
+    }
 }
 
 .password {
@@ -68,13 +91,17 @@ body {
     padding: 17px 16px 15px 16px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 16px;
+
+    @media only screen and (min-width: 768px) {
+   padding: 19px 28px 19px 32px;
+   gap: 24px;
+    }
 }
 
 .text-password {
-    height: 24px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    height: 32px;
     font-size: 18px;
     font-weight: 700;
     background-color: transparent;
@@ -82,6 +109,11 @@ body {
     color: var(--almost-white);
     resize: none;
     overflow: hidden;
+
+
+        @media only screen and (min-width: 768px) {
+                font-size: 26px;
+            }
 
 }
 .text-password:focus{
@@ -98,6 +130,10 @@ body {
     color: var(--neon-green);
     text-transform: uppercase;
     font-size: 10px;
+
+    @media only screen and (min-width: 768px) {
+    font-size: 16px;
+    }
 }
 
 .btn-copy {
@@ -118,25 +154,42 @@ border: none;
 .generator-form {
     background-color: var(--dark-grey);
     padding: 16px;
+
+    @media only screen and (min-width: 768px) {
+        padding: 24px 32px 32px 32px
+    }
 }
 
 .selected-length {
     display: flex;
     gap: 128px;
     align-items: center;
-    margin-bottom: 23px;
+    margin-bottom: 17px;
+
+
+@media only screen and (min-width: 768px) {
+        gap: 264px;
+    }
+
 }
 
 .text-length {
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: 700;
+
+    @media only screen and (min-width: 768px) {
+     font-size: 18px;
+        }
 }
 
 .number-length {
     font-size: 24px;
     font-weight: 700;
     color: var(--neon-green);
+        @media only screen and (min-width: 768px) {
+                font-size: 32px;
+            }
 }
 
 
@@ -242,6 +295,10 @@ border: none;
     justify-content: flex-end;
     gap: 20px;
     font-weight: 700;
+
+    @media only screen and (min-width: 768px) {
+     font-size: 18px;
+    }
 }
 .input-check{
     appearance: none;
@@ -262,6 +319,13 @@ border: none;
         background-size: 20px;
 }
 
+.input-check:hover{
+    border-color: var(--neon-green);
+}
+
+.input-check:focus {
+    border-color: var(--neon-green);
+}
 
 
 .password-strength {
@@ -273,11 +337,20 @@ border: none;
 
     padding: 14px 16px;
     margin-bottom: 16px;
+
+    @media only screen and (min-width: 768px) {
+        padding: 21px 32px 19px 32px;
+width: 412px;
+    }
 }
 
 .text-strength {
     margin: 0px;
     color: var(--grey);
+
+    @media only screen and (min-width: 768px) {
+  font-size: 18px;
+    }
 }
 
 .actual-strength {
@@ -289,6 +362,9 @@ border: none;
 .strength-value {
     font-size: 18px;
     text-transform: uppercase;
+        @media only screen and (min-width: 768px) {
+                font-size: 24px;
+            }
 }
 
 
@@ -347,6 +423,10 @@ border: none;
     font-weight: 700;
     letter-spacing: 0.050em;
     border: none;
+
+        @media only screen and (min-width: 768px) {
+                font-size: 18px;
+            }
 
 }
 
@@ -457,6 +537,14 @@ border: none;
     background-color: maroon;
     border-color: maroon;
     background-size: 20px;
+}
+
+.input-check:hover {
+    border-color: maroon;
+}
+
+.input-check:focus {
+    border-color: maroon;
 }
 
   .password-strength{

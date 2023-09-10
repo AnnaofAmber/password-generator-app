@@ -9,8 +9,9 @@ function onCopy() {
     password.select()
     password.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(password.textContent)
-    copied.textContent = 'copied'
+    
     Notiflix.Notify.success('Password was successfully copied!');
+    copied.textContent = 'copied'
 }
 
 btnCopy.addEventListener('click', onCopy)

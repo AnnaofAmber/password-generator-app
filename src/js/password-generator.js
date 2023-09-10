@@ -1,7 +1,11 @@
+import { strengthCheck } from "./strength-check";
+
+
 const password = document.querySelector('.text-password');
 const btnGenerate = document.querySelector('.btn-generate');
 const passwordLength = document.querySelector('.number-length');
 const copied = document.querySelector('.text-copied')
+const strengthLevel = document.querySelector('.strength-level ')
 
 const checkboxes = {
   uppercase: document.getElementById('uppercase'),
@@ -76,6 +80,10 @@ let charsSymbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')'];
 let chars = [];
 
 function onGenerate(e) {
+    strengthLevel.classList.remove('strength-level-weak')
+    strengthLevel.classList.remove('strength-level-too-weak')
+    strengthLevel.classList.remove('strength-level-medium')
+    strengthLevel.classList.remove('strength-level-strong')
     let generatedPassword = '';
     copied.textContent = ''
   const selectedLength = Number(passwordLength.textContent);
@@ -129,15 +137,13 @@ return el
     for (let i = 0; i < selectedLength; i++) {
             const selected = []
     selectedChars.forEach(el=> selected.push(el))
-        console.log(selected);
-
 
     let randomNumber = Math.floor(Math.random() * selected.length);
     generatedPassword += selected.splice(randomNumber, 1);
     password.textContent = generatedPassword;
   }
 
-
+strengthCheck()
 }
 
 btnGenerate.addEventListener('click', onGenerate);

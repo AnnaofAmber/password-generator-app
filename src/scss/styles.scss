@@ -40,7 +40,7 @@ body {
     margin-right: auto;
     
     @media only screen and (min-width: 768px) {
-        max-width: 768px;
+        max-width: 540px;
         padding-left: 114px;
         padding-right: 114px;
     }
@@ -313,6 +313,11 @@ border: none;
         background-position: center;
         background-size: 0;
 }
+
+.input-check-error{
+    border: 2px solid var(--red);
+}
+
 .input-check:checked{
     background-color: var(--neon-green);
         border-color: var(--neon-green);
@@ -340,7 +345,8 @@ border: none;
 
     @media only screen and (min-width: 768px) {
         padding: 21px 32px 19px 32px;
-width: 412px;
+        width: 412px;
+        margin-bottom: 32px;
     }
 }
 
@@ -372,6 +378,7 @@ width: 412px;
     display: flex;
     gap: 8px;
 }
+
 
 .strength-level-too-weak{
     .strength:first-child{
